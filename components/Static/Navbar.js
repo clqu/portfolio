@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import swr from '../../library/swr'
+import swr from '../../lib/swr'
 export default function Home() {
     const items = [
         { icon: 'fab fa-spotify', link: 'https://open.spotify.com/user/2ln4q9hmq16bji4c1uva0ntgc' },
