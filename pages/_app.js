@@ -1,9 +1,6 @@
 import '../styles/globals.css'
 import Navbar from '../components/Static/Navbar.js'
 import Footer from '../components/Static/Footer.js'
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 function MyApp({ Component, pageProps }) {
     return <>
