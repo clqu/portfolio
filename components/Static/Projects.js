@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import swr from '../../library/swr.js'
+import swr from '../../lib/swr.js'
 import Link from 'next/link'
 
 const Experience = () => {
