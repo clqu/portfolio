@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 import Navbar from '../components/Static/Navbar.js'
 import Footer from '../components/Static/Footer.js'
 
