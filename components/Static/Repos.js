@@ -7,7 +7,7 @@ const Repos = ({ repos }) => {
     <div className="grid grid-cols-1 mb-10 mt-4 md:grid-cols-4 gap-3">
     { repos && repos.length > 0 ? (
         <>
-    {repos.sort((a,b) => b.stargazers_count - a.stargazers_count).map(repo => (
+    {repos.filter(a => a.stargazers_count > 0).sort((a,b) => b.stargazers_count - a.stargazers_count).map(repo => (
     
         <a href={`https://github.com/${repo.full_name}`} className="w-full p-4 bg-base-200 shadow-lg rounded-md transform transition-all duration-200 hover:-translate-y-1.5 text-sm">
         {repo.name}
