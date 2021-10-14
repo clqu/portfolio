@@ -1,13 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
-const Repos = ({ repos }) => {
+import swr from '../../lib/swr.js'
+import Link from 'next/link'
+const Repos = () => {
+    const { data: repos } = swr('/api/repos')
+    const db = repos ? repos : null;
     return <>
     <p className="text-xl font-bold mt-10">Github Repositories</p>
     <div className="grid grid-cols-1 mb-10 mt-4 md:grid-cols-4 gap-3">
-    { repos && repos.length > 0 ? (
+    { repos ? (
         <>
-    {repos.filter(a => a.stargazers_count > 0).sort((a,b) => b.stargazers_count - a.stargazers_count).map(repo => (
+    {db.filter(a => a.stargazers_count > 0).sort((a,b) => b.stargazers_count - a.stargazers_count).map(repo => (
     
         <a href={`https://github.com/${repo.full_name}`} className="w-full p-4 bg-base-200 shadow-lg rounded-md transform transition-all duration-200 hover:-translate-y-1.5 text-sm">
         {repo.name}
