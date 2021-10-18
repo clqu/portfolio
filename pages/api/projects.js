@@ -20,6 +20,15 @@ export default async(req, res) => {
       },
       {
           id: 3,
+          image: "https://i.imgur.com/91MZziJ.png",
+          name: "Allegro",
+          description: "Cheer up your server with Allegro, keep members on the server. The power is in your hands :)",
+          link: "https://allegrobot.xyz",
+          language: 'Next.js',
+          languageIcon: './assets/techs/nextjs.svg'
+      },
+      {
+          id: 4,
           image: "https://i.imgur.com/oDLp2nF.png",
           name: "DevsForum",
           description: "DevsForum was opened to provide a benefit for developers and coders, friends.",
@@ -28,7 +37,7 @@ export default async(req, res) => {
           languageIcon: './assets/techs/php.svg'
       },
       {
-          id: 4,
+          id: 5,
           image: "https://i.imgur.com/oDLp2nF.png",
           name: "Temps City",
           description: "Website theme sharing platform.",
