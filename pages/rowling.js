@@ -24,5 +24,5 @@ const Rowling = () => {
     
     </>
 }
-
+ 
 export default Rowling;
