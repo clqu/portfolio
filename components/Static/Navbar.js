@@ -34,8 +34,6 @@ export default function Home() {
         <div className="flex items-center">
         <img className="w-16 h-16 rounded-md" src={spotify.album_art_url} />
         <div className="ml-2">
-            <p className="opacity-50 text-sm uppercase">i currently listening on spotify</p>
-
             <p>{spotify.song}</p>
             <p className="opacity-75">{spotify.artist}</p>
         </div>
