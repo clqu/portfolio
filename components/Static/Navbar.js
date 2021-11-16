@@ -8,8 +8,6 @@ export default function Home() {
         { icon: 'fab fa-github', link: 'https://github.com/clqu' },
         { icon: 'fab fa-discord', link: 'https://discord.com/users/714451348212678658' },
     ]
-    const { data: db } = swr('/api/spotify')
-    const spotify = db ? (db.data ? (db.data.spotify ? db.data.spotify : null) : null) : null;
     return <>
 <div className="navbar p-0 bg-base-300 border-b border-base-200 text-neutral-content mb-5">
         <div className="navbar-start">
@@ -29,16 +27,6 @@ export default function Home() {
 
       </div>
         </div>
-        {spotify && (
-        <div className="p-2 mb-10 bg-base-200 rounded-md shadow-lg">
-        <div className="flex items-center">
-        <img className="w-16 h-16 rounded-md" src={spotify.album_art_url} />
-        <div className="ml-2">
-            <p>{spotify.song}</p>
-            <p className="opacity-75">{spotify.artist}</p>
-        </div>
-        </div>
-        </div>
-        )}
+        <iframe src="https://linkcord.swoth.xyz/api/v1/widget/714451348212678658?type=spotify&theme=dark&align=left&lang=en" class="w-full" height="140" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </>
 }
