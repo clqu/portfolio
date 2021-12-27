@@ -22,7 +22,9 @@ const Repos = () => {
     ))}
     </>
     ) : (
+        <div className="flex w-full items-center justify-center">
             <i className="fas fa-spinner-third fa-spin fa-2x text-center" />
+        </div>
 
     )}
     </div>

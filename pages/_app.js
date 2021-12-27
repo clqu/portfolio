@@ -10,13 +10,11 @@ function MyApp({ Component, pageProps }) {
             <link href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet" />
         </head>
     <html data-theme="dark">
-        <div className="bg-base-300">
             <div className="max-w-screen-lg p-5 w-full md:py-10 md:w-10/12 lg:py-20 lg:w-8/12 mx-auto transition-all duration-300">
                 <Navbar />
                 <Component {...pageProps} />
                 <Footer />
             </div>
-        </div>
     </html>
     </>
 }

@@ -9,7 +9,7 @@ export default function Home() {
         { icon: 'fab fa-discord', link: 'https://discord.com/users/714451348212678658' },
     ]
     return <>
-<div className="navbar p-0 bg-base-300 border-b border-base-200 text-neutral-content mb-5">
+<div className="navbar p-0 border-b border-base-200/50 text-neutral-content mb-5">
         <div className="navbar-start">
           <span className="text-lg font-bold">
             clqu.live
@@ -27,6 +27,6 @@ export default function Home() {
 
       </div>
         </div>
-        <iframe src="https://linkcord.swoth.xyz/api/v1/widget/714451348212678658?type=spotify&theme=dark&align=left&lang=en" className="w-full rounded-lg mb-4" height="140" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe src="https://linkcord.swoth.xyz/api/v1/widget/714451348212678658?type=spotify&theme=dark&align=left&lang=en&bg=090909" className="w-full rounded-lg mb-4" height="140" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </>
 }

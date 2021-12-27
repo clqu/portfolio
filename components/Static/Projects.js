@@ -20,7 +20,7 @@ const Experience = () => {
                 >
                   <img
                     alt={`${project.name}'s image`}
-                    className="w-full rounded-md"
+                    className="w-full rounded-md h-32"
                     src={project.image}
                   />
                   <div className="mt-3">
@@ -37,10 +37,10 @@ const Experience = () => {
                         />
                       </div>
                     </div>
-                    <p className="text-gray-300 h-24">{project.description}</p>
+                    <p className="text-gray-300 h-32">{project.description}</p>
                     <a
                       href={project.link}
-                      className="bg-gray-700 transition-all duration-200 block text-center p-3 rounded-md hover:bg-gray-800"
+                      className="bg-base-500 transition-all duration-200 block text-center p-3 rounded-md hover:bg-gray-800"
                     >
                       View <i className="fal fa-arrow-right" />
                     </a>
