@@ -2,7 +2,7 @@ export default async (req, res) => {
   const data = [
     {
       id: 1,
-      image: "https://i.imgur.com/pivcSmI.png",
+      image: "https://i.imgur.com/QgAxBkp.png",
       name: "vCodes",
       description:
         "Do you want to expand and improve your Discord bot? Here vCodes are here for you!",
