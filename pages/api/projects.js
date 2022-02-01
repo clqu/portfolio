@@ -20,15 +20,6 @@ export default async (req, res) => {
       languageIcon: "./assets/techs/nextjs.svg",
     },
     {
-      id: 3,
-      image: "https://i.ibb.co/1RkZ9rV/resim.png",
-      name: "Giftix",
-      description: "The most advanced Discord giveaway bot. Giveaway requirements, boost system and more!",
-      link: "https://giftix.xyz",
-      language: "Next.js",
-      languageIcon: "./assets/techs/nextjs.svg",
-    },
-    {
       id: 4,
       image: "https://i.imgur.com/91MZziJ.png",
       name: "Allegro",
