@@ -16,7 +16,7 @@ I use</p>
             {db.map(tech =>
                 <div key={tech.name} className="w-full p-2 bg-base-200 shadow-lg rounded-md transform transition-all duration-200 hover:-translate-y-1.5">
                     <div className="flex items-center">
-                        <img className="w-6 h-6 mr-5" src={tech.src}width={24} height={24} />
+                        <Image width="96" height="96" className="w-6 h-6 mr-5" src={tech.src}width={24} height={24} />
                         {tech.name}
                     </div>
                 </div>
