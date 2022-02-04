@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    domains: [ "i.imgur.com" ]
+  },
   mode: 'production',
   optimization: {
     minimizer: [
