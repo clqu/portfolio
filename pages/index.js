@@ -28,7 +28,7 @@ export default function Home() {
         <p className="font-semibold font-Poppins text-xl">clqu</p>
         <div className="flex items-center space-x-2">
           {items.map(item => (
-            <a href={item.link} className="flex items-center justify-center hover:bg-neutral-700/20 rounded-xl transition-all duration-150 p-2 px-3">
+            <a key={item.link} href={item.link} target="_blank" rel="noreferrer" className="flex items-center justify-center hover:bg-neutral-700/20 rounded-xl transition-all duration-150 p-2 px-3">
               <i className={`${item.icon} text-3xl`} />
             </a>
           ))}
@@ -52,11 +52,11 @@ export default function Home() {
                 )}
                 </div>
                 <p className="text-white/50 text-md mt-3">
-                  Hi, I'm clqu. I am a 2nd year high school student and I have been spending time with codes for about 1-2 years. I really dont know anything more about me. Thanks for reading :)
+                  Hi, I`m clqu. I am a 2nd year high school student and I have been spending time with codes for about 1-2 years. I really dont know anything more about me. Thanks for reading :)
                 </p>
               </div>
               <div className="order-first lg:order-last flex-shrink-0 relative w-[160px] h-[160px] rounded-full">
-                <Image src={`https://cdn.discordapp.com/avatars/${profile.user.id}/${profile.user.avatar}`} width="160" height="160" className="bg-neutral-700 w-[160px] h-[160px] rounded-full" />
+                <Image alt="clqu" src={`https://cdn.discordapp.com/avatars/${profile.user.id}/${profile.user.avatar}`} width="160" height="160" className="bg-neutral-700 w-[160px] h-[160px] rounded-full" />
                 <div className={`${profile.user.status !== "offline" ? 'bg-red-700' : 'bg-neutral-700'} absolute bottom-0 right-4 border-[5px] border-neutral-800/20 w-[32px] h-[32px] rounded-full`} />
               </div>
             </div>
@@ -96,9 +96,9 @@ export default function Home() {
           {_projects ? (
             projects ? (
               projects.map((_, __) => (
-                <a href={_.link} target="_blank" key={__} className="bg-neutral-800/20 p-4 hover:bg-neutral-800/50 shadow-lg hover:shadow-xl transition-all duration-200 rounded-lg w-full">
+                <a href={_.link} target="_blank" rel="noreferrer" key={__} className="bg-neutral-800/20 p-4 hover:bg-neutral-800/50 shadow-lg hover:shadow-xl transition-all duration-200 rounded-lg w-full">
                   <div className="flex-shrink-0 w-full h-[200px] md:h-auto">
-                    <Image src={_.image} width="1024" className="rounded-lg" height="512" />
+                    <Image alt="clqu" src={_.image} width="1024" className="rounded-lg" height="512" />
                   </div>
                   <p className="text-xl font-semibold mt-5">{_.name}</p>
                   <p className="text-md font-normal text-white/50 h-24">{_.description}</p>
@@ -139,7 +139,7 @@ export default function Home() {
                 <div key={__} className="bg-neutral-800/20 p-4 hover:bg-neutral-800/50 shadow-lg hover:shadow-xl transition-all duration-200 rounded-lg w-full">
                   <div className="flex justify-between items-center w-full">
                     <div className="flex-shrink-0 w-[24px] h-[24px]">
-                      <Image src={_.src} className="" width="24" height="24" />
+                      <Image alt="clqu" src={_.src} className="" width="24" height="24" />
                     </div>
                     <p className="text-md font-semibold">{_.name}</p>
                   </div>
@@ -179,7 +179,7 @@ export default function Home() {
           {_repositories ? (
             repositories ? (
               repositories.sort((a, b) => b.stargazers_count - a.stargazers_count).map((_, __) => (
-                <a href={`https://github.com/${_.full_name}`} target="_blank" key={__} className="bg-neutral-800/20 p-4 hover:bg-neutral-800/50 shadow-lg hover:shadow-xl transition-all duration-200 rounded-lg w-full">
+                <a key={__} href={`https://github.com/${_.full_name}`} target="_blank" rel="noreferrer" className="bg-neutral-800/20 p-4 hover:bg-neutral-800/50 shadow-lg hover:shadow-xl transition-all duration-200 rounded-lg w-full">
                   <p className="text-md text-red-500">{_.full_name}</p>
 
                   <div className="flex justify-between w-full mt-2">
