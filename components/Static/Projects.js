@@ -18,22 +18,26 @@ const Experience = () => {
                   key={project.name}
                   className="w-full p-3 bg-base-200 shadow-lg rounded-md transform transition-all duration-200 hover:-translate-y-1.5"
                 >
-                  <img
+                  <Image
                     alt={`${project.name}'s image`}
                     className="w-full rounded-md h-32"
                     src={project.image}
+                    height="512"
+                    width="1024"
                   />
                   <div className="mt-3">
                     <div className="flex items-center">
                       <h3 className="underline text-xl">{project.name}</h3>{" "}
                       <div
                         data-tip={project.language}
-                        class="tooltip-primary shadow-lg ml-1 tooltip"
+                        class="tooltip-primary flex-shrink-0 w-[96px] h-[96px] shadow-lg ml-1 tooltip"
                       >
-                        <img
+                        <Image
                           alt={`${project.name}'s language image'`}
                           src={project.languageIcon}
                           className=" w-6 h-6"
+                          width="96"
+                          height="96"
                         />
                       </div>
                     </div>
