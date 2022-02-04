@@ -7,10 +7,6 @@ function MyApp({ Component, pageProps }) {
         <title>clqu.live</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
-        <link 
-            href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=optional" 
-            rel="stylesheet" 
-        />
     </Head>
     <main className="border-b-[7px] border-t-[7px] h-full border-neutral-800 w-full">
       <div className="max-w-screen-lg p-5 w-full md:w-10/12 lg:w-8/12 mx-auto transition-all duration-300">
