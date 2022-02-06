@@ -3,8 +3,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
 const Header = dynamic(() => import('../components/Header'))
-
-export const config = { amp: true }
 function MyApp({ Component, pageProps }) {
   return (<>
     <Head>
