@@ -11,6 +11,6 @@ export default async (req, res) => {
     try {
         res.send([..._, ...__])
     } catch {
-        res.send([])
+        res.status(500);
     }
 }

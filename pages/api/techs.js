@@ -59,6 +59,26 @@ export default async(req, res) => {
         {
             "name": "Fastify",
             "src": "/assets/techs/fastify.svg"
+        },
+        {
+            "name": "React",
+            "src": "/assets/techs/react.svg"
+        },
+        {
+            "name": "Bulma",
+            "src": "/assets/techs/bulmacss.svg"
+        },
+        {
+            "name": "Git",
+            "src": "/assets/techs/git.svg"
+        },
+        {
+            "name": "Alpine.js",
+            "src": "/assets/techs/alpinejs.svg"
+        },
+        {
+            "name": "Yarn",
+            "src": "/assets/techs/yarn.svg"
         }
     ]
     res.status(200).json(techs)
