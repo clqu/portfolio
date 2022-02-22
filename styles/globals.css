@@ -8,6 +8,7 @@ html {
   --scrollbar-background: #434243;
   color: #fff;
 }
+
 ::-webkit-scrollbar {
 	width: 14px;
 	height: 18px;
@@ -29,4 +30,10 @@ html {
 }
 * {
   font-family: 'Poppins', sans-serif;
+}
+
+.overflow-small::-webkit-scrollbar {
+	width: 8px;
+	height: 18px;
+	background: var(--scrollbar-background);
 }
