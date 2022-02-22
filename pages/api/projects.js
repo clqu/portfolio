@@ -32,7 +32,7 @@ export default async (req, res) => {
     {
       id: 5,
       image: "https://i.imgur.com/Qv83QL8.png",
-      name: "Serity",
+      name: "Giftix",
       description:
         "By creating advanced giveaways with Giftix, you can improve your social media accounts and gain organic lift!",
       link: "https://giftix.gg",
