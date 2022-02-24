@@ -79,6 +79,10 @@ export default async(req, res) => {
         {
             "name": "Yarn",
             "src": "/assets/techs/yarn.svg"
+        },
+        {
+            "name": "Framer Motion",
+            "src": "/assets/techs/framer.svg"
         }
     ]
     res.status(200).json(techs)
