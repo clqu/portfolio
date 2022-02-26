@@ -12,7 +12,7 @@ export default async (req, res) => {
     },
     {
       id: 2,
-      image: "https://i.imgur.com/6lVoGT4.png",
+      image: "https://i.imgur.com/Yjddu0X.png",
       name: "Desion",
       description: "Discover the community that suits you best with Desion.",
       link: "https://desion.me",
