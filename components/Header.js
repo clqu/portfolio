@@ -2,11 +2,11 @@ const items = [
     { icon: 'fab fa-spotify', link: 'https://open.spotify.com/user/2ln4q9hmq16bji4c1uva0ntgc' },
     { icon: 'fab fa-instagram', link: 'https://instagram.com/this.clqu' },
     { icon: 'fab fa-github', link: 'https://github.com/clqu' },
-    { icon: 'fab fa-discord', link: 'https://discord.com/users/714451348212678658' },
 ]
 const navItems = [
     { icon: 'fal fa-home', active: 'fa fa-home', label: 'Home', href: '/' },
     { icon: 'fal fa-compass', active: 'fa fa-compass', label: 'Projects', href: '/projects' },
+    { icon: 'fal fa-phone', active: 'fa fa-phone', label: 'Contact', href: '/contact' },
 ]
 
 import Link from 'next/link';
@@ -26,7 +26,7 @@ const Header = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex justify-center md:justify-start items-center space-x-4">
+            <div className="flex justify-center md:justify-start items-center space-x-4 py-2">
                 {navItems.map(item => (
                     <Link key={item.label} href={item.href}>
                         <a className={`flex items-center justify-center text-white/50 cursor-pointer hover:text-white/100 rounded-xl transition-all duration-150 ${router.asPath === item.href && 'text-white/100'}`}>
