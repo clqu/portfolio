@@ -10,7 +10,7 @@ const items = [
 ]
 
 export default function Home() {
-  const { data: _profile } = swr('https://linkcord.swoth.xyz/api/v1/user/714451348212678658');
+  const { data: _profile } = swr('https://api.vcodes.xyz/v1/find/user?userId=714451348212678658&featureMode=true');
   const profile = _profile ? _profile.data : null;
 
   const { data: _repositories } = swr('/api/repos');
@@ -31,7 +31,7 @@ export default function Home() {
                 <p className="flex items-center text-white text-4xl font-semibold">
                   clqu
                 </p>
-                {profile.user.status !== "offline" && (
+                {profile.presence.status !== "offline" && (
                     <span className="ml-2 bg-black/20 text-red-500 border border-red-500/20 px-2 py-1 font-normal rounded-md text-sm">
                       Online on Discord
                     </span>
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
               <div className="order-first lg:order-last flex-shrink-0 relative w-[160px] h-[160px] rounded-full">
                 <img alt="clqu" src={`https://cdn.discordapp.com/avatars/${profile.user.id}/${profile.user.avatar}`} width="160" height="160" className="bg-neutral-700 w-[160px] h-[160px] rounded-full" />
-                <div className={`${profile.user.status !== "offline" ? 'bg-red-700' : 'bg-neutral-700'} absolute bottom-0 right-4 border-[5px] border-neutral-800/20 w-[32px] h-[32px] rounded-full`} />
+                <div className={`${profile.presence.status !== "offline" ? 'bg-red-700' : 'bg-neutral-700'} absolute bottom-0 right-4 border-[5px] border-neutral-800/20 w-[32px] h-[32px] rounded-full`} />
               </div>
               
             </div>
