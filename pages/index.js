@@ -42,8 +42,8 @@ export default function Home() {
                 </p>
               </div>
               <div className="order-first lg:order-last flex-shrink-0 relative w-[160px] h-[160px] rounded-full">
-                <img alt="clqu" src={`https://cdn.discordapp.com/avatars/${profile.user.id}/${profile.user.avatar}`} width="160" height="160" className="bg-neutral-700 w-[160px] h-[160px] rounded-full" />
-                <div className={`${profile.presence.status !== "offline" ? 'bg-red-700' : 'bg-neutral-700'} absolute bottom-0 right-4 border-[5px] border-neutral-800/20 w-[32px] h-[32px] rounded-full`} />
+                <img alt="clqu" src={`https://cdn.discordapp.com/avatars/${profile.profile.id}/${profile.profile.avatar}`} width="160" height="160" className="bg-neutral-700 w-[160px] h-[160px] rounded-full" />
+                <div className={`${profile.presence.status !== "offline" ? 'bg-red-500 border-red-500/5' : 'bg-neutral-700 border-neutral-800/5'} absolute bottom-0 right-4 border-[4px] w-[28px] h-[28px] rounded-full`} />
               </div>
               
             </div>
