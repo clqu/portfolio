@@ -4,7 +4,7 @@
 
 
 html {
-  background: rgb(0, 0, 0);
+  background: #04050E;
   --scrollbar-background: #434243;
   color: #fff;
 }
@@ -29,7 +29,7 @@ html {
 	background-color: #a1a1a1;
 }
 * {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .overflow-small::-webkit-scrollbar {

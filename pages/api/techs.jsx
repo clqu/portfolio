@@ -81,9 +81,42 @@ export default async(req, res) => {
             "src": "/assets/techs/yarn.svg"
         },
         {
-            "name": "Framer Motion",
-            "src": "/assets/techs/framer.svg"
-        }
+            "name": "Sails.js",
+            "src": "/assets/techs/sailsjs.png"
+        },
+        {
+            "name": "Figma",
+            "src": "/assets/techs/figma.svg"
+        },
+        {
+            "name": "Photoshop CC",
+            "src": "/assets/techs/photoshop.svg"
+        },
+        {
+            "name": "Github",
+            "src": "/assets/techs/github.svg"
+        },
+        {
+            "name": "Firebase",
+            "src": "/assets/techs/firebase.svg"
+        },
+        {
+            "name": "Heroku",
+            "src": "/assets/techs/heroku.svg"
+        },
+        {
+            "name": "pnpm",
+            "src": "/assets/techs/pnpm.svg"
+        },
+        {
+            "name": "Webpack",
+            "src": "/assets/techs/webpack.svg"
+        },
+        {
+            "name": "Iconscout",
+            "src": "/assets/techs/iconscout.png"
+        },
+
     ]
     res.status(200).json(techs)
 }

@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
     const router = useRouter();
     return <>
-        <div className="w-full border-b-2 border-neutral-800/20 pb-2">
+        <div className="w-full border-b-2 border-[#191932]/10 pb-2">
             <div className="flex flex-col md:flex-row w-full items-center md:justify-between">
                 <p className="font-semibold font-Poppins text-xl">clqu</p>
                 <div className="flex items-center space-x-2">
