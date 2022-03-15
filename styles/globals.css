@@ -63,65 +63,53 @@ html {
   
   @keyframes pulse-dnd {
 	0% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
 	}
 	
 	70% {
-	  transform: scale(1);
 	  box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
 	}
 	
 	100% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
 	}
   }
   @keyframes pulse-idle {
 	0% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(250, 166, 26, 0.7);
 	}
 	
 	70% {
-	  transform: scale(1);
 	  box-shadow: 0 0 0 10px rgba(250, 166, 26, 0);
 	}
 	
 	100% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(250, 166, 26, 0);
 	}
   }
   @keyframes pulse-online {
 	0% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(67, 181, 129, 0.7);
 	}
 	
 	70% {
-	  transform: scale(1);
 	  box-shadow: 0 0 0 10px rgba(67, 181, 129, 0);
 	}
 	
 	100% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(67, 181, 129, 0);
 	}
   }
   @keyframes pulse-offline {
 	0% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(116, 127, 141, 0.7);
 	}
 	
 	70% {
-	  transform: scale(1);
 	  box-shadow: 0 0 0 10px rgba(116, 127, 141, 0);
 	}
 	
 	100% {
-	  transform: scale(0.9);
 	  box-shadow: 0 0 0 0 rgba(116, 127, 141, 0);
 	}
   }
