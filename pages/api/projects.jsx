@@ -21,11 +21,11 @@ export default async (req, res) => {
     },
     {
       id: 4,
-      image: "https://i.imgur.com/91MZziJ.png",
+      image: "https://i.imgur.com/oRjmLlV.png",
       name: "Allegro",
       description:
         "Cheer up your server with Allegro, keep members on the server. The power is in your hands :)",
-      link: "https://allegrobot.xyz",
+      link: "https://allegrobot.me",
       language: "Next.js",
       languageIcon: "./assets/techs/nextjs.svg",
     },
@@ -41,7 +41,7 @@ export default async (req, res) => {
     },
     {
       id: 6,
-      image: "https://i.imgur.com/fvxBir3.png",
+      image: "https://i.imgur.com/1JjRRJs.png",
       name: "Serity",
       description:
         "Serity is an interface sales platform. You can buy the interfaces we have prepared for you. Thanks to the licensing system, we keep your interfaces API safe and a 3rd party can never access it. We are here to make sites more secure.",
