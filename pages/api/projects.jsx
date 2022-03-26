@@ -12,6 +12,16 @@ export default async (req, res) => {
     },
     {
       id: 2,
+      image: "https://i.imgur.com/ISIp3Ba.png",
+      name: "Nustry",
+      description:
+        "Provide a more secure search, prevent your data from being retained.",
+      link: "https://nustry.com",
+      language: "Next.js",
+      languageIcon: "./assets/techs/nextjs.svg",
+    },
+    {
+      id: 3,
       image: "https://i.imgur.com/Yjddu0X.png",
       name: "Desion",
       description: "Discover the community that suits you best with Desion.",
