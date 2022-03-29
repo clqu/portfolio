@@ -12,7 +12,7 @@ npm install --s --f && npm run dev
 # or
 yarn install && yarn dev
 ```
-## 🛠 Local Server
+## 🛠 Production Server
 ```bash
 npm install --s --f && npm run build && npm run start
 # or
