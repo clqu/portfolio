@@ -118,11 +118,11 @@ export default async(req, res) => {
         },
         {
             "name": "Typescript",
-            "src": "/assets/techs/typescript.png"
+            "src": "/assets/techs/typescript.svg"
         },
         {
             "name": "Nest.js",
-            "src": "/assets/techs/nestjs.png"
+            "src": "/assets/techs/nestjs.svg"
         },
 
 
