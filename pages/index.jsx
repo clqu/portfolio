@@ -229,7 +229,7 @@ export default function Home() {
               ? technologies.map((_, __) => (
                   <div
                     key={__}
-                    className="cursor-pointer bg-[#191932]/20 p-2 px-4 hover:bg-[#191932]/30 shadow-lg hover:shadow-xl hover:shadow-[#191932]/20 transition-all duration-200 rounded-lg w-full"
+                    className="cursor-pointer bg-[#191932]/20 p-2 px-4 hover:bg-[#191932]/30 shadow-lg transition-all duration-200 rounded-lg w-full"
                   >
                     <div className="flex justify-between items-center w-full">
                       <div className="flex justify-center items-center h-[26px]">
