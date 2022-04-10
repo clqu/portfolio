@@ -116,6 +116,15 @@ export default async(req, res) => {
             "name": "Iconscout",
             "src": "/assets/techs/iconscout.png"
         },
+        {
+            "name": "Typescript",
+            "src": "/assets/techs/typescript.png"
+        },
+        {
+            "name": "Nest.js",
+            "src": "/assets/techs/nestjs.png"
+        },
+
 
     ]
     res.status(200).json(techs)
