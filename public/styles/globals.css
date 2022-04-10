@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Creal";
+    src: url("../fonts/5fd07762093e40beee85d22757cc6d8d.woff2") format("woff2"),
+      url("../fonts/5fd07762093e40beee85d22757cc6d8d.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Creal";
+    src: url("../fonts/f5a1414f8fe9188766b39607d923fbb9.woff2") format("woff2"),
+      url("../fonts/f5a1414f8fe9188766b39607d923fbb9.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Creal";
+    src: url("../fonts/3d32e753a2cefc56ce239b04cce45490.woff2") format("woff2"),
+      url("../fonts/3d32e753a2cefc56ce239b04cce45490.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Creal";
+    src: url("../fonts/7ab640c091619f9534886523d3cde66f.woff2") format("woff2"),
+      url("../fonts/7ab640c091619f9534886523d3cde66f.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Creal";
+    src: url("../fonts/855b722e0240c397005b340b1baf8780.woff2") format("woff2"),
+      url("../fonts/855b722e0240c397005b340b1baf8780.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+* {
+    font-family: 'Creal', sans-serif;
+}
+
+
+
+.layout-colored-background {
+  --color-gradient-1: #8c62ff;
+  --color-gradient-2: #4F3DFE;
+  left: 50%;
+  transform: translateX(-50%);
+  background: 
+    radial-gradient(at 36% 47%, var(--color-gradient-2) 0, transparent 50%),
+    radial-gradient(at 54% 29%, var(--color-gradient-2) 0, transparent 28%),
+    radial-gradient(at 45% 51%, var(--color-gradient-1) 0, transparent 53%),
+    radial-gradient(at 76% 46%, var(--color-gradient-1) 0, transparent 50%);
+  max-height: 800px;
+  height: 80vh;
+  max-width: 1400px;
+  width: 100%;
+  filter: blur(44px);
+  z-index: 1;
+}
+
+.tippy-box[data-animation=fade][data-state=hidden]{
+  opacity:0
+}
+[data-tippy-root]{
+  max-width:calc(100vw - 10px)
+}
+.tippy-box{
+  position:relative;
+  background-color:#ffffff;
+  color:#000!important;
+  border-radius:4px;
+  font-size:14px;
+  line-height:1.4;
+  outline:0;
+  transition-property:transform,visibility,opacity
+}
+.tippy-box[data-placement^=top]>.tippy-arrow{
+  bottom:0
+}
+.tippy-box[data-placement^=top]>.tippy-arrow:before{
+  bottom:-7px;
+  left:0;
+  border-width:8px 8px 0;
+  border-top-color:initial;
+  transform-origin:center top
+}
+.tippy-box[data-placement^=bottom]>.tippy-arrow{
+  top:0
+}
+.tippy-box[data-placement^=bottom]>.tippy-arrow:before{
+  top:-7px;
+  left:0;
+  border-width:0 8px 8px;
+  border-bottom-color:initial;
+  transform-origin:center bottom
+}
+.tippy-box[data-placement^=left]>.tippy-arrow{
+  right:0
+}
+.tippy-box[data-placement^=left]>.tippy-arrow:before{
+  border-width:8px 0 8px 8px;
+  border-left-color:initial;
+  right:-7px;
+  transform-origin:center left
+}
+.tippy-box[data-placement^=right]>.tippy-arrow{
+  left:0
+}
+.tippy-box[data-placement^=right]>.tippy-arrow:before{
+  left:-7px;
+  border-width:8px 8px 8px 0;
+  border-right-color:initial;
+  transform-origin:center right
+}
+.tippy-box[data-inertia][data-state=visible]{
+  transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)
+}
+.tippy-arrow{
+  width:16px;
+  height:16px;
+  color:#ffffff
+}
+.tippy-arrow:before{
+  content:"";
+  position:absolute;
+  border-color:transparent;
+  border-style:solid
+}
+.tippy-content{
+  position:relative;
+  padding:5px 9px;
+  z-index:1
+}
+
+.tippy-box {
+background-color: #ffffff;
+color: rgb(0, 0, 0)!important;
+transition: all 0.1s;
+box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.377);
+}
+.tippy-arrow {
+color: #ffffff;
+}
+.tippy-box[data-animation=scale][data-placement^=top]{
+  transform-origin:bottom
+}
+.tippy-box[data-animation=scale][data-placement^=bottom]{
+  transform-origin:top
+}
+.tippy-box[data-animation=scale][data-placement^=left]{
+  transform-origin:right
+}
+.tippy-box[data-animation=scale][data-placement^=right]{
+  transform-origin:left
+}
+.tippy-box[data-animation=scale][data-state=hidden]{
+  transform:scale(.5);
+  opacity:0
+}

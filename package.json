@@ -1,0 +1,31 @@
+{
+  "name": "clqu.live",
+  "version": "2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tippyjs/react": "^4.2.6",
+    "compression-webpack-plugin": "^9.2.0",
+    "framer-motion": "^6.2.9",
+    "lodash-webpack-plugin": "^0.11.6",
+    "next": "12.1.0",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^1.2.2",
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "@headlessui/react": "^1.5.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "postcss": "^8.4.8",
+    "tailwindcss": "^3.0.23"
+  }
+}
