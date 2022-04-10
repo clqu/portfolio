@@ -12,6 +12,5 @@ module.exports = {
         '/projects': 'Projects',
         '/repositories': 'Repositories',
         '/contact': 'Contact'
-    },
-    contactHook: '' // Discord Webhook URL
+    }
 }
