@@ -1,5 +1,5 @@
 module.exports = {
-    base: 'http://localhost:3000',
+    base: 'https://clqu.live',
     meta: {
         title: 'clqu | Self-taught Web Developer',
         url: 'https://www.clqu.live',
