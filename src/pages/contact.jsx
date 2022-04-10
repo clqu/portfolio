@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { contactHook } from "../../config";
 
 export default function Projects() {
     const inputs = [
@@ -54,7 +53,7 @@ export default function Projects() {
         let email = e?.target?.email?.value;
         let username = e?.target?.username?.value;
         let content = e?.target?.content?.value;
-        await fetch(contactHook, {
+        await fetch(process.env.DISC_HOOK, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
