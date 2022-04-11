@@ -21,8 +21,8 @@ export default function Home({ better }) {
 
   useEffect(() => {
     (async() => {
-      let _user = await fetch('https://linkcord.swoth.xyz/api/v1/user/714451348212678658').then(r => r.json());
-      setUser(_user?.data?.user || {});
+      let _user = await fetch('https://linkcord.js.org/api/v3/user/714451348212678658').then(r => r.json());
+      setUser(_user?.data || {});
     })();
   }, [router]);
 
