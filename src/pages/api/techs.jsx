@@ -124,7 +124,10 @@ export default async(req, res) => {
             "name": "Nest.js",
             "src": "/static/techs/nestjs.svg"
         },
-
+        {
+            "name": "Framer Motion",
+            "src": "/static/techs/framer.svg"
+        },
 
     ]
     res.status(200).json(techs)
