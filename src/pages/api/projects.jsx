@@ -59,6 +59,15 @@ export default async (req, res) => {
       language: "React",
       languageIcon: "./static/techs/react.svg",
     },
+    {
+      id: 7,
+      image: "https://i.imgur.com/5ycEQXC.png",
+      name: "Light",
+      description: "Experience the advanced Discord, find your server partner now and watch you grow.",
+      link: "https://partnerbot.xyz",
+      language: "Typescript",
+      languageIcon: "./static/techs/typescript.svg"
+    }
   ];
   res.status(200).json(data);
 };
