@@ -38,35 +38,6 @@ export default async (req, res) => {
       link: "https://allegrobot.me",
       language: "Next.js",
       languageIcon: "./static/techs/nextjs.svg",
-    },
-    {
-      id: 5,
-      image: "https://i.imgur.com/Qv83QL8.png",
-      name: "Giftix",
-      description:
-        "By creating advanced giveaways with Giftix, you can improve your social media accounts and gain organic lift!",
-      link: "https://giftix.gg",
-      language: "Next.js",
-      languageIcon: "./static/techs/nextjs.svg",
-    },
-    {
-      id: 6,
-      image: "https://i.imgur.com/1JjRRJs.png",
-      name: "Serity",
-      description:
-        "Serity is an interface sales platform. You can buy the interfaces we have prepared for you. Thanks to the licensing system, we keep your interfaces API safe and a 3rd party can never access it. We are here to make sites more secure.",
-      link: "https://serity.me",
-      language: "React",
-      languageIcon: "./static/techs/react.svg",
-    },
-    {
-      id: 7,
-      image: "https://i.imgur.com/5ycEQXC.png",
-      name: "Light",
-      description: "Experience the advanced Discord, find your server partner now and watch you grow.",
-      link: "https://partnerbot.xyz",
-      language: "Typescript",
-      languageIcon: "./static/techs/typescript.svg"
     }
   ];
   res.status(200).json(data);
