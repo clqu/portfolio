@@ -36,7 +36,8 @@ function MyApp({ Component, pageProps }) {
       <Component better={better} {...pageProps} />
     </main>
     {router.asPath === '/' && (
-      <div style={{ zIndex: 1 }} className="hidden lg:block -bottom-48 overflow-none absolute opacity-75 layout-colored-background" />
+      <div style={{ zIndex: 1 }} className="hidden lg:block absolute layout-colored-background" />
+      <div style={{ zIndex: 1 }} className="hidden lg:block bottom-0 rotate-[96deg] fixed layout-colored-background" />
     )}
     
     <Footer better={better} />
