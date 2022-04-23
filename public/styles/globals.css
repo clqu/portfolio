@@ -55,21 +55,19 @@
 
 
 .layout-colored-background {
-  --color-gradient-1: #8c62ff;
-  --color-gradient-2: #4F3DFE;
-  left: 50%;
-  transform: translateX(-50%);
-  background: 
-    radial-gradient(at 36% 47%, var(--color-gradient-2) 0, transparent 50%),
-    radial-gradient(at 54% 29%, var(--color-gradient-2) 0, transparent 28%),
-    radial-gradient(at 45% 51%, var(--color-gradient-1) 0, transparent 53%),
-    radial-gradient(at 76% 46%, var(--color-gradient-1) 0, transparent 50%);
-  max-height: 800px;
-  height: 80vh;
-  max-width: 1400px;
-  width: 100%;
-  filter: blur(44px);
-  z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(at 150% 150%, #3D25FA 0, transparent 54%),
+      radial-gradient(at 150% 0%, #3D25FA 0, transparent 0%),
+      radial-gradient(at 1% 10%, #3D25FA 0, transparent 50%);
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    filter: blur(44px);
+    opacity: 25%;
+    z-index: -1;
 }
 
 .tippy-box[data-animation=fade][data-state=hidden]{
