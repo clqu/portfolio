@@ -1,5 +1,5 @@
-let key1 = 'ghp_ZoiPGkJIqWwxA';
-let key2 = '5whtJO5NJLbX0jWOF3qSd0C';
+let key1 = 'ghp_VzcC7gx0GXzOVP1';
+let key2 = '7kIiTmNtBqj2sOC0S0zxD';
 
 export default async (req, res) => {
     let _ = await (await fetch('https://api.github.com/users/clqu/repos', {
