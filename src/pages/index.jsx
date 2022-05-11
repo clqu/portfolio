@@ -11,34 +11,12 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function Home({ better }) {
   const router = useRouter();
   let [showTechs, setShowTechs] = useState(false);
-  let [user, setUser] = useState({});
-  let [slideAvatar, setSlideAvatar] = useState(false);
   
   const { data: _repos } = swr('/api/repos');
   const repos = _repos ? _repos : null;
   const { data: _techs } = swr('/api/techs');
   const techs = _techs ? _techs : null;
 
-  useEffect(() => {
-    (async() => {
-      let _user = await fetch('https://api.lanyard.rest/v1/users/714451348212678658').then(r => r.json());
-      setUser(_user?.data?.discord_user || {});
-    })();
-  }, [router]);
-
-  useEffect(() => {
-    if(slideAvatar) {
-      setTimeout(() => {
-        setSlideAvatar(slideAvatar ? false : true);
-      }, 60000);
-    } else {
-      setTimeout(() => {
-        setSlideAvatar(slideAvatar ? false : true);
-      }, 2500);
-    }
-  }, [slideAvatar]);
-  useEffect(() => { setSlideAvatar(slideAvatar) }, [slideAvatar]);
-  useEffect(() => { setShowTechs(showTechs) }, [showTechs]);
   const list = {
     visible: {
       opacity: 1,
@@ -68,14 +46,6 @@ export default function Home({ better }) {
             <span className="text-cIndigo"> {better} </span>
          better so that it guides the industry.
         </h1>
-        <div className="hidden lg:block absolute w-full bottom-20">
-          {user?.username && (
-            <div className="w-full flex justify-center items-center space-x-4">
-              <img style={{ zIndex: 2 }} draggable={false} className={`transition-all ${slideAvatar ? 'translate-x-0' : 'translate-x-72'} duration-500 rounded-full flex-shrink-0`} width="172" height="72" src={`https://cdn.discordapp.com/avatars/${user?.id}/${user?.avatar}?size=4096`} />
-              <p className={`${slideAvatar ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-72'} transition-all duration-500 break-words max-w-xl text-xl font-semibold`}>Hi, I am clqu. I am a 2nd year high school student and I have been spending time with codes for about 1-2 years. I really dont know anything more about me. Thanks for reading :)</p>
-            </div>
-          )}
-        </div>
       </div>
 
       <div className="px-6 lg:px-36 h-full py-36 pt-72">
