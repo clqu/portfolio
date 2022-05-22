@@ -30,7 +30,7 @@ export default function Projects() {
         {_repositories ? (
           repositories && (
             repositories.map((p, i) => (
-              <a href={p?.link} target="_blank" key={i} className="cursor-pointer w-full bg-zinc-100/90 p-4 rounded-lg hover:scale-[1.02] transition-all duration-200 hover:-translate-y-1 hover:bg-zinc-200/50">
+              <a href={p?.html_url} target="_blank" key={i} className="cursor-pointer w-full bg-zinc-100/90 p-4 rounded-lg hover:scale-[1.02] transition-all duration-200 hover:-translate-y-1 hover:bg-zinc-200/50">
                   <img src={`https://opengraph.githubassets.com/15ced7abddd056302fa4e531c75f0c1e3510242eca654c93dd8a8f2b5cc92d44/${p?.full_name}`} className="h-48 lg:h-32 w-full shadow-lg rounded-lg"/>
                   <div className="mt-4">
                       <p className="text-md font-semibold">{p?.name}</p>
@@ -38,7 +38,7 @@ export default function Projects() {
                   </div>
 
                   <div className="flex items-center w-full justify-between">
-                    <Tippy content="S" animation="shift-away">
+                    <Tippy content="Stargazers" animation="shift-away">
                       <div className="flex items-center justify-start">
                         <p className="text-sm">
                           <i className="fal fa-star mr-2" />
