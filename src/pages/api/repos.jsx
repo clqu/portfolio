@@ -1,20 +1,14 @@
-let key1 = 'ghp_VzcC7gx0GXzOVP1';
-let key2 = '7kIiTmNtBqj2sOC0S0zxD';
+let key1 = 'ghp_Kd2pLB3SawHKAjL';
+let key2 = 'P3XMzhstavW0B1s1zl70H';
 
 export default async (req, res) => {
-    let _ = await (await fetch('https://api.github.com/users/clqu/repos', {
+    let _ = await (await fetch('https://api.github.com/users/developercity0/repos', {
         headers: {
             Authorization: 'token '+key1+key2
         }
     })).json();
 
-    let __ = await (await fetch('https://api.github.com/users/vcodes-xyz/repos', {
-        headers: {
-            Authorization: 'token '+key1+key2
-        }
-    })).json();
-    
-    let ___ = await (await fetch('https://api.github.com/users/VoidDevsOrg/repos', {
+    let __ = await (await fetch('https://api.github.com/users/Kolay-Degil/repos', {
         headers: {
             Authorization: 'token '+key1+key2
         }
