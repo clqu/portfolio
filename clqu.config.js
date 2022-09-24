@@ -9,4 +9,4 @@ module.exports = {
         404: "This page could not be found.",
         500: "An error occurred while processing your request."
     }
-}
+} 
