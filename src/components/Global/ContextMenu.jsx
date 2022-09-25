@@ -62,7 +62,7 @@ const ContextMenu = ({ content, children }) => {
                     zIndex: 9999999,
                     display: "none"
                 }}
-                className="context-menu absolute bg-[#080808] rounded-lg shadow-xl py-2 w-72 divide-y divide-gray-600/10 space-y-2"
+                className="context-menu absolute bg-[#f8f8f8] dark:bg-[#080808] rounded-lg shadow-xl py-2 w-72 divide-y divide-gray-600/10 space-y-2"
             >
                 {content(event)}
             </div>
