@@ -54,7 +54,7 @@ const Cursor = () => {
     return (
         <>
             <div
-                className={`block fixed ring-2 ring-primary rounded-full w-10 h-10 bg-white/50 dark:bg-black/50 pointer-events-none`}
+                className={`hidden lg:block fixed ring-2 ring-primary rounded-full w-10 h-10 bg-white/50 dark:bg-black/50 pointer-events-none`}
                 style={{
                     left: delayX - 16,
                     top: delayY - 16,
