@@ -1,5 +1,5 @@
-# clqu.live - Personal Website<br/>
-#### [Demo](https://clqu.live) - [Discord Support](https://discord.gg/PFnafbxd5u)
+# Portfolio Website by clqu.<br/>
+#### [Discord Support](https://discord.gg/PFnafbxd5u)
 
 
 
@@ -33,7 +33,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new/import?s=https://github.com/clqu/clqu.live&utm_source=clqu.live) from the clqu.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new/import?s=https://github.com/clqu/portfolio&utm_source=github.com/clqu) from the clqu.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
